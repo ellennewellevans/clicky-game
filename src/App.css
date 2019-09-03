@@ -1,14 +1,23 @@
 .App-header {
     background-color: #222;
-    height: 80px;
+    height: 250px;
     padding: 10px;
     color: white;
 }
 
 .App-title {
-    font-size: 2em;
+    font-size: 100px;
+    font-family: 'WaltographRegular'; 
+    font-weight: normal; 
+    font-style: normal; 
+    text-align: center;
 }
 
 .App-intro {
-    font-size: large;
+    font-size: 50px;
+    text-align: center;
+    font-family: 'WaltographRegular'; 
+    font-weight: normal; 
+    font-style: normal; 
+    margin-bottom: 20px;
 }
