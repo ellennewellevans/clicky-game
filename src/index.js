@@ -1,6 +1,8 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import "bootstrap/dist/css/bootstrap.css";
-import CharacterCard from "./components/CharacterCards";
+import App from "./App";
+import "./index.css";
+import registerServiceWorker from './registerServiceWorker';
 
-ReactDOM.render(<CharacterCard />, document.getElementById("root"));
+ReactDOM.render(<App />, document.getElementById("root"));
+registerServiceWorker();

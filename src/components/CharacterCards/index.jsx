@@ -1,43 +1,11 @@
-import React, { Component } from "react";
+import React from "react";
+import "./style.css";
 
-class CharacterCard extends Component {
-  state = {
-    count: 0
-  };
+const CharacterCards = props => (
+  <div className="card img-container hover">
+      <img alt={props.name} src={props.image} id={props.id}
+        onClick={() => props.shuffleScoreCard(props.id)} className='shuffleScore'/>
+  </div>
+);
 
-  constructor() {
-    super();
-    this.handleIncrement = this.handleIncrement.bind(this);
-  }
-
-  handleIncrement() {
-    console.log("increment clicked", this.state.count);
-  }
-
-  render() {
-    return (
-      <div>
-        <span className={this.getBadgeClasses()}>{this.formatCount()}</span>
-        <button
-          onClick={this.handleIncrement}
-          className="btn btn-secondary btn-sm"
-        >
-          Increment
-        </button>
-      </div>
-    );
-  }
-
-  getBadgeClasses() {
-    let classes = "badge m-2 badge-";
-    classes += this.state.count === 0 ? "warning" : "primary";
-    return classes;
-  }
-
-  formatCount() {
-    const { count } = this.state;
-    return count === 0 ? "Zero" : count;
-  }
-}
-
-export default CharacterCard;
+export default CharacterCards;
