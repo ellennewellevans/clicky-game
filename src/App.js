@@ -1,6 +1,4 @@
-import React, {
-    Component
-} from "react";
+import React, { Component } from "react";
 import CharacterCards from "./components/CharacterCards";
 import Wrapper from "./components/Wrapper";
 import ScoreCard from "./components/ScoreCard";
@@ -34,7 +32,7 @@ class App extends Component {
             if (clickedPrincessIds.length === 8) {
                 this.setState({
                     score: 8,
-                    status: "You Won! Click to play again.",
+                    status: "You Won! You truely are a princess!",
                     clickedPrincessIds: []
                 });
                 console.log('You Win');
